@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hr83CFEgJL/dMiZVuq102c8xe5H2jmbqspfHSxf9sZvIRSNuaffsZqZ7sDzNlCNqQEizP0jyYd09bxBesuxxTg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Canyon\\Desktop\\Game Dev\\Game Dev Programming\\InventoryManager\\InventoryManager.Data\\InventoryManager.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Canyon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Canyon\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Canyon\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

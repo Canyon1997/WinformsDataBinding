@@ -1,0 +1,10 @@
+C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\bin\Debug\InventoryManager.Winforms.exe.config
+C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\bin\Debug\InventoryManager.Winforms.exe
+C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\bin\Debug\InventoryManager.Winforms.pdb
+C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.csprojAssemblyReference.cache
+C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.MainForm.resources
+C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.Properties.Resources.resources
+C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.csproj.GenerateResource.cache
+C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.csproj.CoreCompileInputs.cache
+C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.exe
+C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.pdb
