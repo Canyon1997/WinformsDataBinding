@@ -32,8 +32,8 @@
             System.Windows.Forms.Label fileLabel;
             this.selectFileButton = new System.Windows.Forms.Button();
             this.filenameTextBox = new System.Windows.Forms.TextBox();
+            this.worldViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.playersTabPage = new System.Windows.Forms.TabPage();
             this.playerScoreTextBox = new System.Windows.Forms.TextBox();
@@ -45,15 +45,21 @@
             this.deletePlayerButton = new System.Windows.Forms.Button();
             this.addPlayerButton = new System.Windows.Forms.Button();
             this.playersListBox = new System.Windows.Forms.ListBox();
+            this.playersBidningSource = new System.Windows.Forms.BindingSource(this.components);
+            this.worldBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.itemsTabPage = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.itemsListBox = new System.Windows.Forms.ListBox();
+            this.itemsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             fileLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.worldViewModelBindingSource)).BeginInit();
             this.mainTabControl.SuspendLayout();
             this.playersTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.playersBidningSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.worldBindingSource)).BeginInit();
             this.itemsTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.itemsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // fileLabel
@@ -77,19 +83,20 @@
             // 
             // filenameTextBox
             // 
+            this.filenameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.worldViewModelBindingSource, "Filename", true));
             this.filenameTextBox.Location = new System.Drawing.Point(41, 5);
             this.filenameTextBox.Name = "filenameTextBox";
             this.filenameTextBox.ReadOnly = true;
             this.filenameTextBox.Size = new System.Drawing.Size(406, 20);
             this.filenameTextBox.TabIndex = 2;
             // 
+            // worldViewModelBindingSource
+            // 
+            this.worldViewModelBindingSource.DataSource = typeof(InventoryManager.Winforms.ViewModels.WorldViewModel);
+            // 
             // openFileDialog
             // 
-            this.openFileDialog.FileName = "World Files (*json)|*.json";
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
+            this.openFileDialog.Filter = "World Files (*json)|*.json";
             // 
             // mainTabControl
             // 
@@ -123,6 +130,7 @@
             // 
             // playerScoreTextBox
             // 
+            this.playerScoreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.playersBidningSource, "Score", true));
             this.playerScoreTextBox.Location = new System.Drawing.Point(168, 128);
             this.playerScoreTextBox.Name = "playerScoreTextBox";
             this.playerScoreTextBox.Size = new System.Drawing.Size(100, 20);
@@ -139,6 +147,7 @@
             // 
             // playerHealthTextBox
             // 
+            this.playerHealthTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.playersBidningSource, "Health", true));
             this.playerHealthTextBox.Location = new System.Drawing.Point(168, 78);
             this.playerHealthTextBox.Name = "playerHealthTextBox";
             this.playerHealthTextBox.Size = new System.Drawing.Size(100, 20);
@@ -155,6 +164,7 @@
             // 
             // playerNameTextBox
             // 
+            this.playerNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.playersBidningSource, "Name", true));
             this.playerNameTextBox.Location = new System.Drawing.Point(168, 28);
             this.playerNameTextBox.Name = "playerNameTextBox";
             this.playerNameTextBox.Size = new System.Drawing.Size(178, 20);
@@ -190,11 +200,23 @@
             // 
             // playersListBox
             // 
+            this.playersListBox.DataSource = this.playersBidningSource;
+            this.playersListBox.DisplayMember = "Name";
             this.playersListBox.FormattingEnabled = true;
             this.playersListBox.Location = new System.Drawing.Point(0, 0);
             this.playersListBox.Name = "playersListBox";
             this.playersListBox.Size = new System.Drawing.Size(162, 251);
             this.playersListBox.TabIndex = 0;
+            // 
+            // playersBidningSource
+            // 
+            this.playersBidningSource.DataMember = "Players";
+            this.playersBidningSource.DataSource = this.worldBindingSource;
+            // 
+            // worldBindingSource
+            // 
+            this.worldBindingSource.DataMember = "World";
+            this.worldBindingSource.DataSource = this.worldViewModelBindingSource;
             // 
             // itemsTabPage
             // 
@@ -230,11 +252,19 @@
             // 
             // itemsListBox
             // 
+            this.itemsListBox.DataSource = this.itemsBindingSource;
+            this.itemsListBox.DisplayMember = "Name";
             this.itemsListBox.FormattingEnabled = true;
             this.itemsListBox.Location = new System.Drawing.Point(0, 0);
             this.itemsListBox.Name = "itemsListBox";
             this.itemsListBox.Size = new System.Drawing.Size(164, 251);
             this.itemsListBox.TabIndex = 0;
+            this.itemsListBox.ValueMember = "Name";
+            // 
+            // itemsBindingSource
+            // 
+            this.itemsBindingSource.DataMember = "Items";
+            this.itemsBindingSource.DataSource = this.worldBindingSource;
             // 
             // MainForm
             // 
@@ -249,11 +279,14 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "Inventory Manager";
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.worldViewModelBindingSource)).EndInit();
             this.mainTabControl.ResumeLayout(false);
             this.playersTabPage.ResumeLayout(false);
             this.playersTabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.playersBidningSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.worldBindingSource)).EndInit();
             this.itemsTabPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.itemsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,7 +296,6 @@
         private System.Windows.Forms.Button selectFileButton;
         private System.Windows.Forms.TextBox filenameTextBox;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
-        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.TabControl mainTabControl;
         private System.Windows.Forms.TabPage playersTabPage;
         private System.Windows.Forms.Button deletePlayerButton;
@@ -279,6 +311,10 @@
         private System.Windows.Forms.Label playerHealthLabel;
         private System.Windows.Forms.TextBox playerNameTextBox;
         private System.Windows.Forms.Label playerNameLabel;
+        private System.Windows.Forms.BindingSource worldViewModelBindingSource;
+        private System.Windows.Forms.BindingSource worldBindingSource;
+        private System.Windows.Forms.BindingSource playersBidningSource;
+        private System.Windows.Forms.BindingSource itemsBindingSource;
     }
 }
 

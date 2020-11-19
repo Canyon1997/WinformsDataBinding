@@ -25,7 +25,7 @@ namespace InventoryManager.Winforms
                 if (mViewModel != value)
                 {
                     mViewModel = value;
-                    //worldViewModelBindingSource.DataSource = mViewModel;
+                    worldViewModelBindingSource.DataSource = mViewModel;
                 }
             }
                 
