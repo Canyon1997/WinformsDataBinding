@@ -8,8 +8,6 @@ namespace InventoryManager.Winforms.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public string Filename { get; set; }
-
-
         public World World { get; set; }
 
     }

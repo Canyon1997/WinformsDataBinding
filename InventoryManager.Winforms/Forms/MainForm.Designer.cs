@@ -119,6 +119,7 @@
             this.playersTabPage.TabIndex = 0;
             this.playersTabPage.Text = "Players";
             this.playersTabPage.UseVisualStyleBackColor = true;
+            this.playersTabPage.Click += new System.EventHandler(this.playersTabPage_Click);
             // 
             // playerScoreTextBox
             // 
@@ -185,6 +186,7 @@
             this.addPlayerButton.TabIndex = 1;
             this.addPlayerButton.Text = "&Add";
             this.addPlayerButton.UseVisualStyleBackColor = true;
+            this.addPlayerButton.Click += new System.EventHandler(this.AddPlayerButton_Click);
             // 
             // playersListBox
             // 

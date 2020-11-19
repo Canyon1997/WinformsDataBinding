@@ -25,7 +25,7 @@ namespace InventoryManager.Winforms
                 if (mViewModel != value)
                 {
                     mViewModel = value;
-                    worldViewModelBindingSource.DataSource = mViewModel;
+                    //worldViewModelBindingSource.DataSource = mViewModel;
                 }
             }
                 
@@ -53,6 +53,16 @@ namespace InventoryManager.Winforms
         }
 
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddPlayerButton_Click(object sender, EventArgs e)
+        {
+            //using (AddPlayerForm)
+        }
+
+        private void playersTabPage_Click(object sender, EventArgs e)
         {
 
         }

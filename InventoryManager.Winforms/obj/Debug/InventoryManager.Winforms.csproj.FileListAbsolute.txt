@@ -8,3 +8,21 @@ C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\obj\Debu
 C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.csproj.CoreCompileInputs.cache
 C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.exe
 C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.pdb
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.csprojAssemblyReference.cache
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.MainForm.resources
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.Properties.Resources.resources
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.csproj.GenerateResource.cache
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.csproj.CoreCompileInputs.cache
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.exe
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.pdb
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.AddPlayerForm.resources
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\bin\Debug\World.json
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\bin\Debug\InventoryManager.Winforms.exe.config
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\bin\Debug\InventoryManager.Winforms.exe
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\bin\Debug\InventoryManager.Winforms.pdb
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\bin\Debug\InventoryManager.Data.dll
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\bin\Debug\InventoryManager.Data.pdb
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.csproj.Fody.CopyLocal.cache
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Winforms\obj\Debug\InventoryManager.Winforms.csproj.CopyComplete

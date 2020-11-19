@@ -7,3 +7,11 @@ C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Data\obj\Debug\ne
 C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Data\obj\Debug\netstandard2.0\InventoryManager.Data.csproj.CoreCompileInputs.cache
 C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Data\obj\Debug\netstandard2.0\InventoryManager.Data.dll
 C:\Users\Canyon\source\repos\InventoryManager\InventoryManager.Data\obj\Debug\netstandard2.0\InventoryManager.Data.pdb
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Data\bin\Debug\netstandard2.0\InventoryManager.Data.deps.json
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Data\bin\Debug\netstandard2.0\InventoryManager.Data.dll
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Data\bin\Debug\netstandard2.0\InventoryManager.Data.pdb
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Data\obj\Debug\netstandard2.0\InventoryManager.Data.AssemblyInfoInputs.cache
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Data\obj\Debug\netstandard2.0\InventoryManager.Data.AssemblyInfo.cs
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Data\obj\Debug\netstandard2.0\InventoryManager.Data.csproj.CoreCompileInputs.cache
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Data\obj\Debug\netstandard2.0\InventoryManager.Data.dll
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Data\obj\Debug\netstandard2.0\InventoryManager.Data.pdb
