@@ -21,11 +21,17 @@ namespace InventoryManager.Winforms
         public AddPlayerForm()
         {
             InitializeComponent();
+            okButton.Enabled = false;
         }
 
         private void AddPlayerForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void NameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            okButton.Enabled = !string.IsNullOrEmpty(PlayerName);
         }
     }
 }

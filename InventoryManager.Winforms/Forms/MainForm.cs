@@ -59,7 +59,14 @@ namespace InventoryManager.Winforms
 
         private void AddPlayerButton_Click(object sender, EventArgs e)
         {
-            //using (AddPlayerForm)
+            using (AddPlayerForm addPlayerForm = new AddPlayerForm())
+            {
+                if(addPlayerForm.ShowDialog() == DialogResult.OK)
+                {
+                    Player player = new Player { Name = addPlayerForm.PlayerName };
+                    //playersListBox.Items.Add();
+                }
+            }
         }
 
         private void playersTabPage_Click(object sender, EventArgs e)
