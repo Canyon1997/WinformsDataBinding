@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InventoryManager.Winforms
+namespace InventoryManager.WinForms.Forms
 {
     public partial class AddPlayerForm : Form
     {
-        public string PlayerName 
+        public string PlayerName
         {
-            get => nameTextBox.Text;
+            get => nameTextBox.Text; 
             set => nameTextBox.Text = value;
         }
 
@@ -23,14 +23,14 @@ namespace InventoryManager.Winforms
             InitializeComponent();
         }
 
-        private void AddPlayerForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NameTextBox_TextChanged(object sender, EventArgs e)
+        private void NameTextBox_TextChanged(object sender, System.EventArgs e)
         {
             okButton.Enabled = !string.IsNullOrEmpty(PlayerName);
+        }
+
+        private void AddPlayerForm_Load(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

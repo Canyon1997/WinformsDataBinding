@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using InventoryManager.WinForms.Forms;
 
-namespace InventoryManager.Winforms
+namespace InventoryManager.WinForms
 {
     static class Program
     {

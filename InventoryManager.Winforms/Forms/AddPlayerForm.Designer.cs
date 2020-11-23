@@ -1,5 +1,4 @@
-﻿
-namespace InventoryManager.Winforms
+﻿namespace InventoryManager.WinForms.Forms
 {
     partial class AddPlayerForm
     {
@@ -29,39 +28,18 @@ namespace InventoryManager.Winforms
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancelButton = new System.Windows.Forms.Button();
-            this.okButton = new System.Windows.Forms.Button();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.nameLabel = new System.Windows.Forms.Label();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.okButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // cancelButton
-            // 
-            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(115, 51);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 23);
-            this.cancelButton.TabIndex = 16;
-            this.cancelButton.Text = "&Cancel";
-            this.cancelButton.UseVisualStyleBackColor = true;
-            // 
-            // okButton
-            // 
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.Enabled = false;
-            this.okButton.Location = new System.Drawing.Point(34, 51);
-            this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 23);
-            this.okButton.TabIndex = 15;
-            this.okButton.Text = "&Ok";
-            this.okButton.UseVisualStyleBackColor = true;
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(12, 25);
+            this.nameTextBox.Location = new System.Drawing.Point(15, 26);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(178, 20);
-            this.nameTextBox.TabIndex = 18;
+            this.nameTextBox.Size = new System.Drawing.Size(268, 20);
+            this.nameTextBox.TabIndex = 1;
             this.nameTextBox.TextChanged += new System.EventHandler(this.NameTextBox_TextChanged);
             // 
             // nameLabel
@@ -69,9 +47,30 @@ namespace InventoryManager.Winforms
             this.nameLabel.AutoSize = true;
             this.nameLabel.Location = new System.Drawing.Point(12, 9);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(35, 13);
-            this.nameLabel.TabIndex = 17;
-            this.nameLabel.Text = "Name";
+            this.nameLabel.Size = new System.Drawing.Size(38, 13);
+            this.nameLabel.TabIndex = 0;
+            this.nameLabel.Text = "&Name:";
+            // 
+            // cancelButton
+            // 
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.Location = new System.Drawing.Point(150, 52);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.TabIndex = 3;
+            this.cancelButton.Text = "&Cancel";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            // 
+            // okButton
+            // 
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.Enabled = false;
+            this.okButton.Location = new System.Drawing.Point(69, 52);
+            this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(75, 23);
+            this.okButton.TabIndex = 2;
+            this.okButton.Text = "&Ok";
+            this.okButton.UseVisualStyleBackColor = true;
             // 
             // AddPlayerForm
             // 
@@ -79,11 +78,11 @@ namespace InventoryManager.Winforms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(213, 86);
-            this.Controls.Add(this.nameTextBox);
-            this.Controls.Add(this.nameLabel);
+            this.ClientSize = new System.Drawing.Size(304, 88);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.okButton);
+            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(this.nameLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -98,9 +97,10 @@ namespace InventoryManager.Winforms
         }
 
         #endregion
-        private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Button okButton;
+
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Button okButton;
     }
 }

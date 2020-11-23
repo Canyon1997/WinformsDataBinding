@@ -5,18 +5,20 @@ using System.ComponentModel;
 using InventoryManager.Data;
 using Newtonsoft.Json;
 
-namespace InventoryManager.Winforms.ViewModels
+namespace InventoryManager.WinForms.ViewModels
 {
     public class WorldViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        public string Filename { get; set; }
-        public BindingList<Player> Players { get; set; }
 
+        public string Filename { get; set; }
+
+        public BindingList<Player> Players { get; set; }
+        
         public BindingList<Item> Items { get; set; }
 
-        public World World
-        {
+        public World World 
+        { 
             set
             {
                 if (mWorld != value)
@@ -36,10 +38,7 @@ namespace InventoryManager.Winforms.ViewModels
             }
         }
 
-        public WorldViewModel(World world = null)
-        {
-            World = world;
-        }
+        public WorldViewModel(World world = null) => World = world;
 
         public void SaveWorld()
         {
@@ -52,12 +51,21 @@ namespace InventoryManager.Winforms.ViewModels
             {
                 Formatting = Formatting.Indented
             };
-
             using (StreamWriter streamWriter = new StreamWriter(Filename))
             using (JsonWriter jsonWriter = new JsonTextWriter(streamWriter))
             {
                 serializer.Serialize(jsonWriter, mWorld);
             }
+        }
+
+        public void RemoveItem(Item item)
+        {
+            foreach (Player player in Players)
+            {
+                player.Inventory.Remove(item);
+            }
+
+            Items.Remove(item);
         }
 
         private World mWorld;

@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "//UZ+PpiKppCGpSP3qH6YHhjsBj7t//ylja2XolooArxBeoTBxVlkK5yzPtSHA4yu8xlen8bq9ag2HG8zNXcqA==",
+  "dgSpecHash": "f2tku+x4TK+c0P6vbckulDVnfu+HEhbVi0mkJeJaPc/A7PnlyYp5Jn+f766kZxZmKlh55NcS1Xbz/shpBjGtMg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Canyon\\Desktop\\Game Dev\\Game Dev Programming\\InventoryManager\\InventoryManager.Data\\InventoryManager.Data.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Canyon\\.nuget\\packages\\fody\\6.3.0\\fody.6.3.0.nupkg.sha512",
+    "C:\\Users\\Canyon\\.nuget\\packages\\fody\\6.0.0\\fody.6.0.0.nupkg.sha512",
     "C:\\Users\\Canyon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Canyon\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Canyon\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\Canyon\\.nuget\\packages\\propertychanged.fody\\3.3.1\\propertychanged.fody.3.3.1.nupkg.sha512"
+    "C:\\Users\\Canyon\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Canyon\\.nuget\\packages\\propertychanged.fody\\3.1.3\\propertychanged.fody.3.1.3.nupkg.sha512"
   ],
   "logs": []
 }

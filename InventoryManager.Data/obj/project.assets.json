@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Fody/6.3.0": {
+      "Fody/6.0.0": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -32,7 +32,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/12.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -41,16 +41,17 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "PropertyChanged.Fody/3.3.1": {
+      "PropertyChanged.Fody/3.1.3": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.3.0"
+          "Fody": "6.0.0",
+          "NETStandard.Library": "1.6.1"
         },
         "compile": {
-          "lib/netstandard2.0/PropertyChanged.dll": {}
+          "lib/netstandard1.0/PropertyChanged.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/PropertyChanged.dll": {}
+          "lib/netstandard1.0/PropertyChanged.dll": {}
         },
         "build": {
           "build/PropertyChanged.Fody.props": {}
@@ -59,16 +60,15 @@
     }
   },
   "libraries": {
-    "Fody/6.3.0": {
-      "sha512": "kBGlW/vBUvBSyCvFI3YICNl77gjUr0KMROlBTeBPN/+J3JMU57w1dpXPwjmU4ahdBTYLomzgxKLaJ3jVNuXuQg==",
+    "Fody/6.0.0": {
+      "sha512": "rH9Q7GapghyLYESfeCUOqh0S70eLc3FAikIgEEyGeng3JJf1M7mt2BUxjz93o3ipDXLrKn1s69AIEolmnVn8xg==",
       "type": "package",
-      "path": "fody/6.3.0",
+      "path": "fody/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "License.txt",
         "build/Fody.targets",
-        "fody.6.3.0.nupkg.sha512",
+        "fody.6.0.0.nupkg.sha512",
         "fody.nuspec",
         "netclassictask/Fody.dll",
         "netclassictask/FodyCommon.dll",
@@ -236,10 +236,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.3": {
-      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
       "type": "package",
-      "path": "newtonsoft.json/12.0.3",
+      "path": "newtonsoft.json/12.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -262,15 +262,14 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.3.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "packageIcon.png"
+        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
       ]
     },
-    "PropertyChanged.Fody/3.3.1": {
-      "sha512": "/K/X8wn2IZV7Zezb+WvieOalWopFJKEcB7BrPoDFCj74VexupWdtvqriCoifSyrX0E+XhTzk0cVQd26hQ7TODg==",
+    "PropertyChanged.Fody/3.1.3": {
+      "sha512": "GaTTQdS8NCVMBrBGIu43XwyicIyD7iIp9zFLK57Q2kfba6BffMGt4bl0jwfkMysbdqUjP4oZcunvbQBauWieUQ==",
       "type": "package",
-      "path": "propertychanged.fody/3.3.1",
+      "path": "propertychanged.fody/3.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -279,9 +278,7 @@
         "lib/net40/PropertyChanged.xml",
         "lib/netstandard1.0/PropertyChanged.dll",
         "lib/netstandard1.0/PropertyChanged.xml",
-        "lib/netstandard2.0/PropertyChanged.dll",
-        "lib/netstandard2.0/PropertyChanged.xml",
-        "propertychanged.fody.3.3.1.nupkg.sha512",
+        "propertychanged.fody.3.1.3.nupkg.sha512",
         "propertychanged.fody.nuspec",
         "weaver/PropertyChanged.Fody.dll",
         "weaver/PropertyChanged.Fody.xcf"
@@ -291,8 +288,8 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "Newtonsoft.Json >= 12.0.3",
-      "PropertyChanged.Fody >= 3.3.1"
+      "Newtonsoft.Json >= 12.0.2",
+      "PropertyChanged.Fody >= 3.1.3"
     ]
   },
   "packageFolders": {
@@ -342,11 +339,11 @@
           },
           "Newtonsoft.Json": {
             "target": "Package",
-            "version": "[12.0.3, )"
+            "version": "[12.0.2, )"
           },
           "PropertyChanged.Fody": {
             "target": "Package",
-            "version": "[3.3.1, )"
+            "version": "[3.1.3, )"
           }
         },
         "imports": [
