@@ -48,6 +48,7 @@ namespace InventoryManager.Winforms
             // okButton
             // 
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.Enabled = false;
             this.okButton.Location = new System.Drawing.Point(34, 51);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);

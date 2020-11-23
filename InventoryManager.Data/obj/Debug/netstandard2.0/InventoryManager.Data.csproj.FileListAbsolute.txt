@@ -15,3 +15,4 @@ C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\Inventory
 C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Data\obj\Debug\netstandard2.0\InventoryManager.Data.csproj.CoreCompileInputs.cache
 C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Data\obj\Debug\netstandard2.0\InventoryManager.Data.dll
 C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Data\obj\Debug\netstandard2.0\InventoryManager.Data.pdb
+C:\Users\Canyon\Desktop\Game Dev\Game Dev Programming\InventoryManager\InventoryManager.Data\obj\Debug\netstandard2.0\InventoryManager.Data.csprojAssemblyReference.cache

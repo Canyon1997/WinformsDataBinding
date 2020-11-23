@@ -21,7 +21,6 @@ namespace InventoryManager.Winforms
         public AddPlayerForm()
         {
             InitializeComponent();
-            okButton.Enabled = false;
         }
 
         private void AddPlayerForm_Load(object sender, EventArgs e)
